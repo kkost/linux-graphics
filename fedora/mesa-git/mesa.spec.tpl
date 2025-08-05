@@ -100,6 +100,7 @@ BuildRequires:  cbindgen
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
 BuildRequires:  gettext
+BuildRequires:  cmake
 %if 0%{?with_hardware}
 BuildRequires:  kernel-headers
 %endif
@@ -139,6 +140,7 @@ BuildRequires:  pkgconfig(xrandr) >= 1.3
 BuildRequires:  python3-pycparser
 BuildRequires:  bison
 BuildRequires:  flex
+BuildRequires:  pkgconfig(libdisplay-info)
 %if 0%{?with_lmsensors}
 BuildRequires:  lm_sensors-devel
 %endif
