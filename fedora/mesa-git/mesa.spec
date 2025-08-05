@@ -4,12 +4,12 @@
 #global __meson_auto_features disabled
 
 %global build_repo https://gitlab.freedesktop.org/mesa/mesa
-%define version_string 25.2.0
+%define version_string 25.3.0
 %global version_major %(ver=%{version_string}; echo ${ver%.*.*})
 
-%define commit 37e71a5cb24cd6053603ca64b67352e0c8e2fce8
+%define commit 6775873e9ec87cb38f3420b73b4b6a8ebdd0b612
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global commit_date 20250626.20
+%global commit_date 20250806.00
 %global gitrel .%{commit_date}.%{shortcommit}
 
 %global hw_video_codecs vc1dec,av1dec,av1enc,vp9dec,h264dec,h264enc,h265dec,h265enc
@@ -93,7 +93,7 @@ Source1:        Mesa-MLAA-License-Clarification-Email.txt
 # Disable rgb10 configs by default:
 # https://bugzilla.redhat.com/show_bug.cgi?id=1560481
 #Patch7:         0001-gallium-Disable-rgb10-configs-by-default.patch
-Patch1:         001-disable-proc_macro2-unstable-features.patch
+#Patch1:         001-disable-proc_macro2-unstable-features.patch
 
 BuildRequires:  meson >= 1.3.0
 BuildRequires:  cbindgen
