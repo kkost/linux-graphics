@@ -101,7 +101,7 @@ BuildRequires:  gcc
 BuildRequires:  gcc-c++
 BuildRequires:  gettext
 BuildRequires:  cmake
-BuildRequires:  rust-syn+full-devel
+BuildRequires:  (crate(syn/clone-impls) >= 2.0.15 with crate(syn/clone-impls) < 3)
 %if 0%{?with_hardware}
 BuildRequires:  kernel-headers
 %endif
