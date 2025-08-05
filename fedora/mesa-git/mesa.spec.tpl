@@ -102,7 +102,6 @@ BuildRequires:  gcc-c++
 BuildRequires:  gettext
 BuildRequires:  cmake
 BuildRequires:  (crate(syn) >= 2.0.15 with crate(syn) < 3)
-BuildRequires:  syn
 %if 0%{?with_hardware}
 BuildRequires:  kernel-headers
 %endif
