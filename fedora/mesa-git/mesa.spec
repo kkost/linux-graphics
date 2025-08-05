@@ -101,7 +101,7 @@ BuildRequires:  gcc
 BuildRequires:  gcc-c++
 BuildRequires:  gettext
 BuildRequires:  cmake
-BuildRequires:  rust-syn
+BuildRequires:  rust-syn+full-devel
 %if 0%{?with_hardware}
 BuildRequires:  kernel-headers
 %endif
