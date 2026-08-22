@@ -101,6 +101,8 @@ BuildRequires:  cbindgen
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
 BuildRequires:  gettext
+BuildRequires:  libstdc++-devel
+BuildRequires:  libstdc++-static
 %if 0%{?with_hardware}
 BuildRequires:  kernel-headers
 %endif
@@ -342,6 +344,7 @@ export MESON_PACKAGE_CACHE_DIR="%{cargo_registry}/"
 %rewrite_wrap_file quote
 %rewrite_wrap_file syn
 %rewrite_wrap_file unicode-ident
+%rewrite_wrap_file rustc-hash
 %endif 
 
 # We've gotten a report that enabling LTO for mesa breaks some games. See
